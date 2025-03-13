@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 function Header() {
   const { i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false); // For managing custom dropdown state
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false); 
   const menuRef = useRef(null);
   const burgerMenuRef = useRef(null); 
 
@@ -21,7 +21,7 @@ function Header() {
       }
 
       if (isLanguageMenuOpen && !event.target.closest(`.${styles.languageDropdown}`)) {
-        setIsLanguageMenuOpen(false); // Close the custom language menu
+        setIsLanguageMenuOpen(false); 
       }
     };
 
