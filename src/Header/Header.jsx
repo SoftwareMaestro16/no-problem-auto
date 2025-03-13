@@ -37,7 +37,15 @@ function Header() {
       <nav>
         <div className={styles.leftPart}>
           <img src="/no-problem-auto-cropped.png" alt="logo" />
-          <h2>No Problem Auto</h2>
+          <h2>
+            Services
+          </h2>
+          <h2>
+            About Us
+          </h2>
+          <h2>
+            Special Offers
+          </h2>
         </div>
         <div 
           className={styles.burgerMenu} 
@@ -53,19 +61,6 @@ function Header() {
           className={`${styles.rightPart} ${menuOpen ? styles.open : ""}`} 
           ref={menuRef} 
         >
-          <a 
-            href="https://t.me/NoProblemAuto" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={styles.telegramLink}
-          >
-            <img src="/telegram.png" alt="Telegram" className={styles.icon} />
-          </a>
-
-          <a href="tel:+19548736034" className={styles.callLink}>
-            <img src="/phone.png" alt="Call" className={styles.icon} />
-          </a>
-
           <div className={styles.languageDropdown}>
             <div 
               className={styles.languageSelector}
@@ -89,6 +84,21 @@ function Header() {
               </div>
             )}
           </div>
+
+          <a href="tel:+19548736034" className={styles.callLink}>
+            <img src="/media/phone.png" alt="Call" className={styles.icon} />
+          </a>
+          <a 
+            href="https://t.me/NoProblemAuto" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={styles.telegramLink}
+          >
+            <img src="/media/telegram.jpg" alt="Telegram" className={styles.icon} />
+          </a>
+
+          <h1 className={styles.number}>+1 954 8736 034</h1>
+          
         </div>
       </nav>
     </header>

@@ -30,14 +30,15 @@ function App() {
       > 
         <div>
           <motion.img 
-            src="/bg-logo.png" 
-            alt="" 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 0.4, scale: 1 }}
+            src="/logo-nobg.png" 
+            alt="No Problem Auto" 
+            initial={{ opacity: 0.05, scale: 0.9 }}
+            animate={{ opacity: 0.55, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
           />
 
           <div className={styles.texts}>
+          <h2 className={styles.name}>No Problem Auto</h2>
             <motion.h1 
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -54,7 +55,7 @@ function App() {
               {t("slogan")}
             </motion.h2>
 
-            <motion.button 
+            {/* <motion.button 
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               initial={{ opacity: 0, y: 20 }}
@@ -62,7 +63,7 @@ function App() {
               transition={{ duration: 0.1, delay: 0.1 }}
             >
               {t("get-disc")}
-            </motion.button>
+            </motion.button> */}
 
             <motion.button 
               whileHover={{ scale: 1.1 }}

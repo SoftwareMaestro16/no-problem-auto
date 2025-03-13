@@ -34,7 +34,6 @@ function Features() {
     return (
         <div className={styles.container} ref={ref}>
             <div className={styles.featuresMainContainer}>
-                {/* Анимация заголовка */}
                 <motion.h1 
                     initial={{ opacity: 0, y: -20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}

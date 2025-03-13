@@ -14,21 +14,21 @@
 header {
     @extend %flex-center;
     flex-direction: row;
-    background-color: #1c1c21;
+    background-color: #1313289a;
     position: relative;
     z-index: 2;
 
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background: linear-gradient(90deg, #ffff00, #ffa500, #eabb39);
-        background-size: 200% 100%;
-        animation: gradientBorder 3s infinite linear;
-    }
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 4px;
+    //     background: linear-gradient(90deg, #ffff00, #ffa500, #eabb39);
+    //     background-size: 200% 100%;
+    //     animation: gradientBorder 3s infinite linear;
+    // }
 
     nav {
         @extend %flex-center;
@@ -37,17 +37,24 @@ header {
         width: 100%;
         padding: 0 2.5%;
 
+        margin-top: 10px;
+        margin-bottom: 5px;
+
         .leftPart {
+          
             @extend %flex-center;
             flex-direction: row;
 
             img {
                 width: 46px;
                 height: 46px;
+                margin-right: 10px;
+
             }
 
             h2 {
-                margin-left: 15px;
+              font-size: clamp(17px, 3vw, 20px);
+              margin-left: 10px;
             }
         }
 
@@ -56,6 +63,15 @@ header {
             @extend %flex-center;
             flex-direction: row;
             gap: 7px;
+
+            .icon {
+              border-radius: 50%;
+            }
+
+            .number {
+              font-size: 18px;
+              font-weight: 500;
+            }
 
             .languageDropdown {
                 position: relative;
@@ -67,14 +83,14 @@ header {
                 justify-content: center;
                 align-items: center; 
                 padding: 5px;
-                border-radius: 4px; 
+                border-radius: 6px; 
               }
               
               .languageMenu {
                 position: absolute;
                 top: 100%;
                 left: 0;
-                background-color: #eabb39;
+                background-color: #1313289a;
                 border: 1px solid #ffffff;
                 border-radius: 8px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -93,7 +109,6 @@ header {
                 margin-top: -4px;
               }
               
-
               
               .languageIcon {
                 width: 32px;
@@ -110,7 +125,7 @@ header {
 
             select {
                 margin-left: 3px;
-                background-color: #eabb39; 
+                background-color: #1313289a; 
                 color: #333;
                 border: 2px solid #ffffff;
                 padding: 5px 10px;
@@ -121,7 +136,7 @@ header {
                 transition: all 0.3s ease;
                 
                 option {
-                    background-color: #eabb39; 
+                    background-color: #1313289a; 
                     color: #333; 
                     padding: 10px; 
                     font-size: 16px; 
@@ -144,7 +159,7 @@ header {
                 }
         
                 &:hover {
-                  border-color: #d4b800; 
+                  border-color: #1313289a; 
                 }
               }
         }
@@ -160,16 +175,17 @@ header {
          
           @media (max-width: 768px) {
             .rightPart {
+
               display: none;
               position: absolute;
-              top: 60px; 
+              top: 72px; 
               left: 0;
               width: 100%;
-              background-color: #1c1c21;
+              background-color: #0f0f1bc3;
               flex-direction: column;
               align-items: center;
-              padding: 15px 0;
-              gap: 15px;
+              padding: 10px 0;
+              gap: 12px;
               box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             }
           
