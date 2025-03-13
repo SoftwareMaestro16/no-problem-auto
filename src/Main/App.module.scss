@@ -20,7 +20,7 @@ body {
 .main {
   margin: 0;
   background-color: #06031E;
-  height: clamp(34vh, 50vw, 92.5vh);
+  height: clamp(300px, 50vw, 92.5vh);
   @extend %flex-center;
   justify-content: flex-start; 
   flex-direction: column;
