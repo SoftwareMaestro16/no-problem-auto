@@ -1,0 +1,189 @@
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes gradientBorder {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+
+header {
+    @extend %flex-center;
+    flex-direction: row;
+    background-color: #1c1c21;
+    position: relative;
+    z-index: 2;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, #ffff00, #ffa500, #eabb39);
+        background-size: 200% 100%;
+        animation: gradientBorder 3s infinite linear;
+    }
+
+    nav {
+        @extend %flex-center;
+        flex-direction: row;
+        justify-content: space-between; 
+        width: 100%;
+        padding: 0 2.5%;
+
+        .leftPart {
+            @extend %flex-center;
+            flex-direction: row;
+
+            img {
+                width: 46px;
+                height: 46px;
+            }
+
+            h2 {
+                margin-left: 15px;
+            }
+        }
+
+        .rightPart {
+            z-index: 1000;
+            @extend %flex-center;
+            flex-direction: row;
+            gap: 7px;
+
+            .languageDropdown {
+                position: relative;
+              }
+              
+              .languageSelector {
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                padding: 5px;
+                border-radius: 4px; 
+              }
+              
+              .languageMenu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #eabb39;
+                border: 1px solid #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: column;
+                width: 100%; 
+                max-width: 120px;
+              }
+              
+              .languageMenu div {
+                display: flex;
+                align-items: center; 
+                padding: 4px;
+                cursor: pointer;
+                border-radius: 4px; 
+                margin-top: -4px;
+              }
+              
+
+              
+              .languageIcon {
+                width: 32px;
+                height: 21px;
+                margin-right: -2px;
+                border-radius: 3px; 
+              }
+
+            img {
+                width: 36px;
+                height: 36px;
+                margin-top: 5px;
+            }
+
+            select {
+                margin-left: 3px;
+                background-color: #eabb39; 
+                color: #333;
+                border: 2px solid #ffffff;
+                padding: 5px 10px;
+                font-size: 16px;
+                border-radius: 10px;
+                font-family: 'Inter', system-ui;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                
+                option {
+                    background-color: #eabb39; 
+                    color: #333; 
+                    padding: 10px; 
+                    font-size: 16px; 
+                    border: 1px solid transparent; 
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    
+                    &:hover {
+                      background-color: #e6e6e6; 
+                    }
+            
+                    &:active {
+                      background-color: #d0d0d0; 
+                    }
+                  }
+        
+                &:focus {
+                  outline: none; 
+                  border-color: #ffffff; 
+                }
+        
+                &:hover {
+                  border-color: #d4b800; 
+                }
+              }
+        }
+
+        .burgerMenu {
+            display: none;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+          }
+          
+         
+          @media (max-width: 768px) {
+            .rightPart {
+              display: none;
+              position: absolute;
+              top: 60px; 
+              left: 0;
+              width: 100%;
+              background-color: #1c1c21;
+              flex-direction: column;
+              align-items: center;
+              padding: 15px 0;
+              gap: 15px;
+              box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            }
+          
+            .rightPart.open {
+              display: flex !important; 
+              flex-direction: row;
+              z-index: 999;
+            }
+          
+            .burgerMenu {
+              display: block;
+            }
+          }
+        
+    }
+}
+
