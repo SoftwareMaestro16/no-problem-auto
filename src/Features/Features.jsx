@@ -28,7 +28,7 @@ function Features() {
             img: "/features/tire.jpeg",
         },
         {
-            title: t("title-5"),
+            title: t("title-6"),
             img: "/features/diagnostics.jpeg",
         },
     ];
