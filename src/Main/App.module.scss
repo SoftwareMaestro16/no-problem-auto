@@ -17,6 +17,12 @@ body {
   justify-content: center;
 }
 
+@keyframes gradientText {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .main {
   margin: 0;
   background-color: #06031E;
@@ -26,6 +32,7 @@ body {
   flex-direction: column;
   position: relative; 
   z-index: 1;
+  border-bottom: 1px solid #ffffff2e;
 
 //   &::after {
 //     content: "";

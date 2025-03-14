@@ -9,23 +9,27 @@ function Features() {
     const features = [
         {
             title: t("title-1"),
-            description: t("desc-1"),
-            img: "/features/service.png", 
+            img: "/features/engine.jpeg", 
         },
         {
             title: t("title-2"),
-            description: t("desc-2"),
-            img: "/features/langs.png",
+            img: "/features/oil.jpeg",
         },
         {
             title: t("title-3"),
-            description: t("desc-3"),
-            img: "/features/price.png",
+            img: "/features/brake.jpeg",
         },
         {
             title: t("title-4"),
-            description: t("desc-4"),
-            img: "/features/lounge.png",
+            img: "/features/battery.jpeg",
+        },
+        {
+            title: t("title-5"),
+            img: "/features/tire.jpeg",
+        },
+        {
+            title: t("title-5"),
+            img: "/features/diagnostics.jpeg",
         },
     ];
 
@@ -49,7 +53,7 @@ function Features() {
                             className={styles.featureCard}
                             initial={{ opacity: 0, y: 20 }}
                             animate={inView ? { opacity: 1, y: 0 } : {}}
-                            transition={{ duration: 0.5, delay: index * 0.2 }}
+                            transition={{ duration: 0.15, delay: index * 0.05 }}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
@@ -57,7 +61,6 @@ function Features() {
                                 <img src={feature.img} alt={feature.title} className={styles.featureIcon} />
                                 <h3>{feature.title}</h3>
                             </div>
-                            <p>{feature.description}</p>
                         </motion.div>
                     ))}
                 </div>
