@@ -109,6 +109,7 @@
             // }
 
             @media (max-width: 858px) {
+                margin: 0 auto;
                 width: 195px;
                 margin-bottom: 87px;
             }
@@ -117,7 +118,7 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                margin-left: 12px;
+                margin-left: 0;
                 margin-bottom: 5px;
                 background-color: #f3931e11;
                 border-radius: 17px;
