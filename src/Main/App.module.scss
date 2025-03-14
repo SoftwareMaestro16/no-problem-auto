@@ -75,14 +75,14 @@ body {
       transform: translateX(-50%);
       margin-right: 0;
     
-      @media (max-width: 768px) { 
+      @media (max-width: 680px) { 
         width: 400px;
-        left: 0%;
-
+        
       }
     
       @media (max-width: 480px) { 
         margin-top: 55px;
+        left: 0%;
         width: 100%;
 
       }
