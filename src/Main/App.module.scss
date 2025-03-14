@@ -110,11 +110,14 @@ body {
       
       @media (max-width: 768px) {
         width: 100%;
-       
       }
 
       @media (max-width: 400px) {
         margin-left: 20px;    
+      }
+
+      @media (max-width: 370px) {
+        margin-left: 30px;    
       }
     
       .name {
