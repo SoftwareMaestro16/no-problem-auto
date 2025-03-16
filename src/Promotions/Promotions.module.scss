@@ -114,6 +114,10 @@
             width: 37vw;
             padding: 1.7%;
             border-radius: 16px;
+
+            @media ((min-width: 780px) and (max-width: 1300px)) {
+               width: 47vw;
+            }
     
             h2, h3 {
                 margin: 0;
@@ -131,7 +135,7 @@
         }
     
         .leftBlock {
-            transform: translateX(-55%);
+            transform: translateX(-45%);
             margin-bottom: 40px;
 
             @media (max-width: 780px) {
@@ -140,7 +144,7 @@
         }
     
         .rightBlock {
-            transform: translateX(55%);
+            transform: translateX(45%);
             margin-bottom: 40px;
 
             @media (max-width: 780px) {
