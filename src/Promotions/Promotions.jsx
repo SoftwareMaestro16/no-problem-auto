@@ -23,7 +23,7 @@ function Promotions() {
                 src="/engine1.png" 
                 alt="" 
                 initial={{ opacity: 0, x: -50 }}
-                animate={inView ? { opacity: 0.5, x: 0 } : {}}
+                animate={inView ? { opacity: 0.4, x: 0 } : {}}
                 transition={{ duration: 1, delay: 0.3 }}
             />
             
@@ -31,8 +31,8 @@ function Promotions() {
                 className={styles.engine2} 
                 src="/engine2.png" 
                 alt="" 
-                initial={{ opacity: 0, x: 50 }}
-                animate={inView ? { opacity: 0.5, x: 0 } : {}}
+                initial={{ opacity: 0, x: 50, scaleX: -1 }} 
+                animate={inView ? { opacity: 0.4, x: 0, scaleX: -1 } : {}}
                 transition={{ duration: 1, delay: 0.3 }}
             />
 
