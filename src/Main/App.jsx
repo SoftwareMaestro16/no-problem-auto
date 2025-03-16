@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 import Header from '../Header/Header';
 import Features from '../Features/Features';
 import About from '../About/About';
+import Promotions from '../Promotions/Promotions';
 import Footer from '../Footer/Footer';
-
 
 function App() {
   const { t } = useTranslation();
@@ -82,6 +82,7 @@ function App() {
 
       <Features />
       <About />
+      <Promotions />
       <Footer />
     </I18nextProvider>
   );

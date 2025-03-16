@@ -22,7 +22,11 @@
         @extend %flex-center;
         flex-direction: column;
         z-index: 46;
-        margin-bottom: 50px;
+        margin-bottom: 2%;
+
+        @media (max-width: 780px) {
+            margin-bottom: 5%;
+        }
     }
 
     h1 {
