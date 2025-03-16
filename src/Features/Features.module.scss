@@ -18,18 +18,6 @@
     position: relative;
     border-bottom: 1px solid #ffffff2e;
 
-    // &::after {
-    //     content: "";
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 4px;
-    //     background: linear-gradient(90deg, #ffff00, #ffa500, #eabb39);
-    //     background-size: 200% 100%;
-    //     animation: gradientBorder 3s infinite linear;
-    // }
-
     .featuresMainContainer {
         @extend %flex-center;
         flex-direction: column;
@@ -43,17 +31,6 @@
         margin-top: 35px;
         margin-bottom: -5px;
         font-size: 35px;
-        // background: linear-gradient(90deg, #ff9500, #eabb39); 
-        // background-size: 200% 200%; 
-        // -webkit-background-clip: text; 
-        // -webkit-text-fill-color: transparent;
-        // animation: gradientText 3s ease infinite; 
-
-        // @keyframes gradientText {
-        //     0% { background-position: 0% 50%; }
-        //     50% { background-position: 100% 50%; }
-        //     100% { background-position: 0% 50%; }
-        // }
 
         @media (max-width: 768px) {
             margin-top: 25px;
@@ -74,7 +51,6 @@
         max-width: 65vw;
         margin-top: 20px;
         
-
         @media (max-width: 1710px) {
             max-width: 75vw;
         }
@@ -92,7 +68,7 @@
             border-radius: 15px;
             padding: 10px;
             border: transparent;
-            margin-bottom: 115px;
+            margin-bottom: -5px;
             
 
             @media (max-width: 1710px) {

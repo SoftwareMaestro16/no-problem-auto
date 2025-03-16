@@ -9,5 +9,21 @@
     "title-3": "Brake & Suspension Repair",
     "title-4": "Battery & Electrical Systems",
     "title-5": "Tire & Wheel Services",
-    "title-6": "Diagnostics & Check Engine"
+    "title-6": "Diagnostics & Check Engine",
+    "about": "About Us",
+    "about-desc": "Excellence, Convenience and Care",
+    "full-desc-1": "At <span class='redText'>No Problem Auto</span> we believe every driver deserves a reliable and hassle-free service experience.",
+    "full-desc-2": "Our certified technicians use cutting-edge equipment and genuine parts to ensure your vehicle receives the highest standard of care.",
+    "full-desc-3": "From routine maintenance to complex repairs, we're committed to getting you back on the road safely and efficiently.",
+    "why-choose": "Why Choose Us?",
+    "param-1": "<span class='dot'>•</span> Certified Technicians",
+    "param-1-desc": "Skilled professionals trained to handle all makes and models.",
+    "param-2": "<span class='dot'>•</span>  Advanced Diagnostics",
+    "param-2-desc": "State-of-the-art equipment for accurate troubleshooting.",
+    "param-3": "<span class='dot'>•</span>  Transparent Pricing",
+    "param-3-desc": "Clear estimates and no hidden fees.",
+    "param-4": "<span class='dot'>•</span>  Customer-Centric Approach",
+    "param-4-desc": "Friendly staff focused on delivering a top-notch experience.",
+    "about-end": "Choose <span class='redText'>No Problem Auto</span> for a smooth, reliable, and worry-free car care experience.",
+    "about-end-desc": "We're here to keep you and your vehicle moving forward - no problem."
 }

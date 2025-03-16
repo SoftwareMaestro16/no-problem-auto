@@ -3,16 +3,18 @@ import styles from "./App.module.scss";
 import { I18nextProvider } from 'react-i18next';
 import { useTranslation } from "react-i18next";
 import i18n from '../i18n';
+import { motion } from "framer-motion";
 import Header from '../Header/Header';
 import Features from '../Features/Features';
+import About from '../About/About';
 import Footer from '../Footer/Footer';
-import { motion } from "framer-motion";
+
 
 function App() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    document.body.style.backgroundColor = "#121212"; 
+    document.body.style.backgroundColor = "#06031E"; 
     return () => {
       document.body.style.backgroundColor = ""; 
     };
@@ -79,6 +81,7 @@ function App() {
       </motion.div>
 
       <Features />
+      <About />
       <Footer />
     </I18nextProvider>
   );
