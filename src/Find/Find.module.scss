@@ -4,6 +4,12 @@
     justify-content: center;
 }
 
+@keyframes gradientText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 .container {
     border-bottom: 1px solid #ffffff2e;
 
@@ -26,6 +32,38 @@
         @media (max-width: 780px) { 
             height: 380px;
             margin-bottom: 25px;
+        }
+    }
+
+    .addressContainer {
+        @extend %flex-center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 10px;
+        gap: 4px;
+
+        img {
+            width: 36px;
+            height: 36px;
+
+            @media (max-width: 780px) { 
+                width: 27px;
+                height: 27px;
+            }
+            
+        }
+
+        a {
+            text-decoration: none;
+
+            h2 {
+                font-size: clamp(17px, 2vw, 28px);
+                background: linear-gradient(90deg, #ff9500, #eabb39); 
+                background-size: 200% 200%; 
+                -webkit-background-clip: text; 
+                -webkit-text-fill-color: transparent;
+                animation: gradientText 3s ease infinite; 
+            }
         }
     }
 

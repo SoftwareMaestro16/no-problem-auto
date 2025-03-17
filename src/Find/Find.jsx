@@ -1,9 +1,22 @@
 import styles from "./Find.module.scss";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 function Find() {
     const { t } = useTranslation();
+    const [isCopied, setIsCopied] = useState(false);
+
+    const handleCopyClick = () => {
+        navigator.clipboard.writeText("3999 Pembroke Rd Hollywood, FL 33021 United States")
+            .then(() => {
+                setIsCopied(true); 
+                setTimeout(() => {
+                    setIsCopied(false);
+                }, 2000);
+            })
+            .catch(err => console.error('Ошибка копирования: ', err));
+    };
 
     return (
         <>
@@ -27,6 +40,40 @@ function Find() {
                     initial={{ opacity: 0, scale: 0.95 }}
                     transition={{ duration: 1 }}
                 />
+
+                <div className={styles.addressContainer}>
+                    <motion.img
+                        src="/location.png"
+                        alt="Location Icon"
+                        className={styles.icon}
+                        whileInView={{ opacity: 1 }}
+                        initial={{ opacity: 0 }}
+                        transition={{ duration: 0.8 }}
+                    />
+                    <a
+                        href="https://www.google.com/maps?q=3999+Pembroke+Rd,+Hollywood,+FL+33021,+United+States"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <motion.h2
+                            className={styles.address}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            initial={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.8 }}
+                        >
+                            3999 Pembroke Rd Hollywood, FL 33021 United States
+                        </motion.h2>
+                    </a>
+                    <motion.img
+                        src={isCopied ? "/yes.png" : "/copy.png"}
+                        alt="Copy Icon"
+                        className={styles.icon}
+                        onClick={handleCopyClick}
+                        whileInView={{ opacity: 1 }}
+                        initial={{ opacity: 0 }}
+                        transition={{ duration: 0.8 }}
+                    />
+                </div>
             </div>
         </>
     );
