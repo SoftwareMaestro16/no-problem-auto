@@ -2,8 +2,15 @@
   margin: 0 auto;
 }
 
+html, body, #root {
+  width: 100%;
+}
+
 body {
   background-color: #06031E;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -25,6 +32,8 @@ body {
 
 .main {
   margin: 0;
+  overflow-x: hidden;
+
   background-color: #06031E;
   height: clamp(300px, 50vw, 92.5vh);
   @extend %flex-center;
@@ -62,6 +71,7 @@ body {
       left: 50%;
       transform: translateX(-0%);
       margin-right: 0;
+   
     
       @media (min-width: 685px) and (max-width: 930px) { 
         width: clamp(200px, 36vw, 360px); 
