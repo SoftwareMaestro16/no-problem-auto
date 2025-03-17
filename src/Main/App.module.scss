@@ -22,6 +22,7 @@
 }
 
 .main {
+  
   overflow: hidden;
   margin: 0;
   overflow: visible;
@@ -46,6 +47,7 @@
     width: 100%;
     margin-left: 8%;
     background-color: transparent;
+    overflow: hidden;
 
     
     @media (max-width: 480px) { 

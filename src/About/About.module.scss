@@ -4,6 +4,8 @@
     justify-content: center;
 }
 
+
+
 @keyframes gradientText {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -47,8 +49,6 @@
             width: clamp(400px, 44vw, 750px);
         }
 
-        
-    
         @media (max-width: 780px) { 
             width: 57vw;
             left: 50%;
@@ -121,7 +121,7 @@
         
             h2 {
                 margin: 5px;
-                font-size: clamp(15.8px, 2vw, 30px); 
+                font-size: clamp(15px, 2vw, 30px); 
                 text-align: left;
                 font-weight: 600;
 
@@ -145,7 +145,11 @@
             width: 53vw;
             
             .why {
-                color: #eabb39;
+                background: linear-gradient(90deg, #ff9500, #eabb39); 
+                background-size: 200% 200%; 
+                -webkit-background-clip: text; 
+                -webkit-text-fill-color: transparent;
+                animation: gradientText 3s ease infinite; 
                 margin-bottom: 5px;
             }
 
@@ -166,7 +170,7 @@
 
             h2 {
                 margin: 5px;
-                font-size: clamp(15.8px, 2vw, 30px); 
+                font-size: clamp(15.85px, 2vw, 30px); 
                 text-align: left;
                 font-weight: 600;
 
@@ -222,7 +226,11 @@
             }
 
             .endDesc {
-                color: #eabb39;
+                background: linear-gradient(90deg, #ff9500, #eabb39); 
+                background-size: 200% 200%; 
+                -webkit-background-clip: text; 
+                -webkit-text-fill-color: transparent;
+                animation: gradientText 3s ease infinite; 
             }
         }
         

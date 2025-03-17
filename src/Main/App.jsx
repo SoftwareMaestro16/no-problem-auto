@@ -8,6 +8,7 @@ import Header from '../Header/Header';
 import Features from '../Features/Features';
 import About from '../About/About';
 import Promotions from '../Promotions/Promotions';
+import Find from '../Find/Find';
 import Footer from '../Footer/Footer';
 
 function App() {
@@ -73,6 +74,7 @@ function App() {
       <Features />
       <About />
       <Promotions />
+      <Find />
       <Footer />
     </I18nextProvider>
   );
