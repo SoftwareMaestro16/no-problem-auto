@@ -61,7 +61,7 @@ function Find() {
                             initial={{ opacity: 0, y: -20 }}
                             transition={{ duration: 0.8 }}
                         >
-                            3999 Pembroke Rd Hollywood, FL 33021 United States
+                            3999 Pembroke Rd Hollywood, FL 33021
                         </motion.h2>
                     </a>
                     <motion.img
