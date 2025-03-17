@@ -21,5 +21,11 @@
         overflow: hidden;
         margin: 0 auto;
         margin-bottom: 20px;
+
+        @media (max-width: 780px) { 
+            height: 380px;
+        }
     }
+
+   
 }
