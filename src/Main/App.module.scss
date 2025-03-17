@@ -47,7 +47,6 @@
     width: 100%;
     margin-left: 8%;
     background-color: transparent;
-    overflow: hidden;
 
     
     @media (max-width: 480px) { 
@@ -69,6 +68,7 @@
       transform: translateX(-0%);
       margin-right: 0;
       contain: paint;
+      
    
       @media (min-width: 685px) and (max-width: 930px) { 
         width: clamp(200px, 36vw, 360px); 

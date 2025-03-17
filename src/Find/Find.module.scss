@@ -10,4 +10,16 @@
         @extend %flex-center;
         font-size: clamp(24px, 3vw, 32px);
     }
+
+    .map {
+        @extend %flex-center;
+        width: 85vw;
+        max-width: 1000px;
+        height: 450px; 
+        border-radius: 10px;
+        border: none;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
 }
