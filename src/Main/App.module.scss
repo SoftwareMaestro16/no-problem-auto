@@ -10,7 +10,7 @@ body {
   background-color: #06031E;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 * {
@@ -32,6 +32,7 @@ body {
 
 .main {
   margin: 0;
+  overflow: visible;
   background-color: #06031E;
   height: clamp(300px, 50vw, 92.5vh);
   @extend %flex-center;
@@ -60,6 +61,7 @@ body {
 
     img {
       background-color: transparent;
+      pointer-events: none;
       margin-top: 20%;
       width: clamp(350px, 36vw, 600px);
       position: absolute;
