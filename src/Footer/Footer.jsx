@@ -1,7 +1,7 @@
-import styles from "./Footer.module.scss"
+import styles from "./Footer.module.scss";
+import { motion } from "framer-motion";
 
 function Footer() {
-
     return (
         <>
             <footer>
@@ -9,25 +9,50 @@ function Footer() {
                     <br />
                     
                     <div className={styles.mediaContainer}>
-                        <a href="tel:+19548736034">
+                        <motion.a 
+                            href="tel:+19548736034" 
+                            whileHover={{ scale: 1.1 }} 
+                            whileTap={{ scale: 0.9 }}
+                        >
                             <img src="/media/phone.png" alt="" />
-                        </a>
-                        <a href="https://t.me/NoProblemAuto" target="_blank" rel="noopener noreferrer">
+                        </motion.a>
+
+                        <motion.a 
+                            href="https://t.me/NoProblemAuto" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            whileHover={{ scale: 1.1 }} 
+                            whileTap={{ scale: 0.9 }}
+                        >
                             <img src="/media/telegram.jpg" alt="" />
-                        </a>
-                        <a href="https://www.instagram.com/noproblem.auto/" target="_blank" rel="noopener noreferrer">
+                        </motion.a>
+
+                        <motion.a 
+                            href="https://www.instagram.com/noproblem.auto/" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            whileHover={{ scale: 1.1 }} 
+                            whileTap={{ scale: 0.9 }}
+                        >
                             <img src="/media/instagram.jpg" alt="" />
-                        </a>
-                        <a href="https://www.facebook.com/profile.php?id=61572476408682&sk=photos" target="_blank" rel="noopener noreferrer">
+                        </motion.a>
+
+                        <motion.a 
+                            href="https://www.facebook.com/profile.php?id=61572476408682&sk=photos" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            whileHover={{ scale: 1.1 }} 
+                            whileTap={{ scale: 0.9 }}
+                        >
                             <img src="/media/facebook.jpg" alt="" />
-                        </a>
+                        </motion.a>
                     </div>
 
                     <br />
                 </div>
             </footer>
         </>
-    )
+    );
 }
 
 export default Footer;

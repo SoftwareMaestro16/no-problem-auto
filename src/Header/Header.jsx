@@ -37,15 +37,15 @@ function Header() {
       <nav>
         <div className={styles.leftPart}>
           <img src="/no-problem-auto-cropped.png" alt="logo" />
-          <h2>
-            Services
-          </h2>
-          <h2>
-            About Us
-          </h2>
-          <h2>
-            Special Offers
-          </h2>
+          <a href="#features">
+            <h2>Services</h2>
+          </a>
+          <a href="#about">
+            <h2>About Us</h2>
+          </a>
+          <a href="#promotions">
+            <h2>Special Offers</h2>
+          </a>
         </div>
         <div 
           className={styles.burgerMenu} 

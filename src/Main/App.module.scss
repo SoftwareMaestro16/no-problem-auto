@@ -159,20 +159,9 @@
         
       }
     
-      button {
+      a {
         margin-left: 5%;
-        width: 25vw;
-        max-width: 250px;
-        min-width: 200px;
-        height: 53px;
-        border-radius: 22px;
-        border: transparent;
-        background: linear-gradient(90deg, #ff8800, #eabb39); 
-        font-size: 18px;
-        font-weight: 600;
-        cursor: pointer;
-        margin-top: 10px;
-        
+
         @media (max-width: 768px) {
           margin-left: 0;
           height: 48px;
@@ -181,6 +170,22 @@
 
         @media (min-width: 685px) and (max-width: 1100px) { 
           margin-left: 15px;
+        }
+          button {
+        
+          width: 25vw;
+          max-width: 250px;
+          min-width: 200px;
+          height: 53px;
+          border-radius: 22px;
+          border: transparent;
+          background: linear-gradient(90deg, #ff8800, #eabb39); 
+          font-size: 18px;
+          font-weight: 600;
+          cursor: pointer;
+          margin-top: 10px;
+        
+          
         }
       }
     

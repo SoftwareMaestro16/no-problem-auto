@@ -18,6 +18,10 @@ header {
     position: relative;
     z-index: 2;
 
+    a {
+      text-decoration: none;
+    }
+
     nav {
         @extend %flex-center;
         flex-direction: row;

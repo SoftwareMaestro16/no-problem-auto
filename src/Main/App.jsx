@@ -41,7 +41,7 @@ function App() {
           />
 
           <div className={styles.texts}>
-          <h2 className={styles.name}>No Problem Auto</h2>
+            <h2 className={styles.name}>No Problem Auto</h2>
             <motion.h1 
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -58,6 +58,14 @@ function App() {
               {t("slogan")}
             </motion.h2>
 
+            
+            <motion.a 
+            href="#find" 
+            style={{ textDecoration: "none" }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.1, delay: 0.1 }}
+          >
             <motion.button 
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -67,14 +75,23 @@ function App() {
             >
               {t("find")}
             </motion.button>
+          </motion.a>
           </div>
         </div>
       </motion.div>
 
-      <Features />
-      <About />
-      <Promotions />
-      <Find />
+      <div id="features">
+        <Features />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="promotions">
+        <Promotions />
+      </div>
+      <div id="find">
+        <Find />
+      </div>
       <Footer />
     </I18nextProvider>
   );
