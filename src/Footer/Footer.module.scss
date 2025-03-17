@@ -1,0 +1,25 @@
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #131328d9;
+    
+    .footerContainer {
+        
+        .mediaContainer {
+            @extend %flex-center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 11px;
+
+            img {
+                border-radius: 50%;
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+}

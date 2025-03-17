@@ -18,18 +18,6 @@ header {
     position: relative;
     z-index: 2;
 
-    // &::after {
-    //     content: "";
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 4px;
-    //     background: linear-gradient(90deg, #ffff00, #ffa500, #eabb39);
-    //     background-size: 200% 100%;
-    //     animation: gradientBorder 3s infinite linear;
-    // }
-
     nav {
         @extend %flex-center;
         flex-direction: row;
