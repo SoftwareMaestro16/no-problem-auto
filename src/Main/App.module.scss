@@ -31,9 +31,7 @@ body {
 }
 
 .main {
-  height: auto;
   margin: 0;
-  // overflow: hidden;
   background-color: #06031E;
   height: clamp(300px, 50vw, 92.5vh);
   @extend %flex-center;

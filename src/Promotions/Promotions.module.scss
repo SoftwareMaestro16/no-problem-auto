@@ -3,14 +3,21 @@
     align-items: center;
     justify-content: center;
 }
-
+html, body {
+    overflow-x: hidden;
+}
 .main {
     border-bottom: 1px solid #ffffff2e;
     position: relative; 
+    
 
     .mainText {
         @extend %flex-center;
         font-size: clamp(24px, 3vw, 32px);
+    }
+
+    .engine1, .engine2 {
+        contain: paint;
     }
 
     .engine1 {

@@ -5,22 +5,3 @@
 .dot {
     color: white !important;
 }
-
-html, body {
-    overflow-x: hidden;
-    height: auto;
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-}
-
-
-body {
-    position: relative;
-    overscroll-behavior-x: none;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
