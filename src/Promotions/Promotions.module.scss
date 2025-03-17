@@ -3,13 +3,11 @@
     align-items: center;
     justify-content: center;
 }
-html, body {
-    overflow-x: hidden;
-}
+
 .main {
     border-bottom: 1px solid #ffffff2e;
     position: relative; 
-    
+    overflow-x: hidden;
 
     .mainText {
         @extend %flex-center;
