@@ -32,7 +32,7 @@ function Find() {
 
                 <motion.iframe
                     className={styles.map}
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.1552988213866!2d-80.18592158899138!3d25.995729677110585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9abfe97f6df8d%3A0xcfa6a4a3f9e38012!2zMzk5OSBQZW1icm9rZSBSZCwgSG9sbHl3b29kLCBGTCAzMzAyMSwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1742213500671!5m2!1sru!2s"
+                    src="https://www.google.com/maps/embed?pb=!4v1742219131926!6m8!1m7!1sEQg_Djep-TP_JlmOeAV45w!2m2!1d25.99633704884437!2d-80.18366984504577!3f163.05834883288247!4f-12.651784290347734!5f0.7820865974627469"
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
@@ -51,7 +51,7 @@ function Find() {
                         transition={{ duration: 0.8 }}
                     />
                     <a
-                        href="https://www.google.com/maps?q=3999+Pembroke+Rd,+Hollywood,+FL+33021,+United+States"
+                        href="https://maps.app.goo.gl/8EgsPb7dic9T87zDA"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
