@@ -32,8 +32,7 @@ function Find() {
 
                 <motion.iframe
                     className={styles.map}
-                    src="https://www.google.com/maps/embed?pb=!4v1742219131926!6m8!1m7!1sEQg_Djep-TP_JlmOeAV45w!2m2!1d25.99633704884437!2d-80.18366984504577!3f163.05834883288247!4f-12.651784290347734!5f0.7820865974627469"
-                    allowFullScreen=""
+                    src="https://www.google.com/maps/embed?pb=!4v1742219580107!6m8!1m7!1sa4EGuiV2hdFLw0s4tK0i0A!2m2!1d25.99633624042059!2d-80.18355975740607!3f186.6314768588716!4f-14.131010366341869!5f0.7820865974627469"                    allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     whileInView={{ opacity: 1, scale: 1 }}
