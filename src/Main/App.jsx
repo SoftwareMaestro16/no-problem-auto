@@ -31,13 +31,13 @@ function App() {
         transition={{ duration: 1 }}
       > 
         <div>
-          <motion.img 
+          {/* <motion.img 
             src="/logo-nobg.png" 
             alt="No Problem Auto" 
             initial={{ opacity: 0.05, scale: 0.9 }}
             animate={{ opacity: 0.55, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
-          />
+          /> */}
 
           <div className={styles.texts}>
           <h2 className={styles.name}>No Problem Auto</h2>
