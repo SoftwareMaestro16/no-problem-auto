@@ -10,8 +10,8 @@ function Find() {
             <div className={styles.container}>
                 <motion.h2
                     className={styles.mainText}
+                    whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
                     {t('find-s')}
@@ -23,8 +23,8 @@ function Find() {
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
+                    whileInView={{ opacity: 1, scale: 1 }}
                     initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1 }}
                 />
             </div>
