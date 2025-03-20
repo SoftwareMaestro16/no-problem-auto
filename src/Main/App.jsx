@@ -24,6 +24,10 @@ function App() {
   return (
     <I18nextProvider i18n={i18n}>
       <Header />
+
+      <div className={styles.reqiews}>
+        
+      </div>
       
       <motion.div 
         className={styles.main} 

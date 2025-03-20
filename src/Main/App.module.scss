@@ -19,6 +19,10 @@
   100% { background-position: 0% 50%; }
 }
 
+.rewiews {
+  
+}
+
 .main { 
   overflow: hidden;
   margin: 0;
@@ -95,7 +99,12 @@
     
       .name {
         font-size: clamp(23px, 4.8vw, 40px);
-        color: #e61e1ef5;
+        background: linear-gradient(90deg, #ff9500, #eabb39); 
+        background-size: 200% 200%; 
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        animation: gradientText 3s ease infinite; 
+        margin-bottom: 5px;
         margin: 0;
         margin-bottom: 0px;
         margin-left: 5%;
@@ -116,12 +125,7 @@
         font-weight: 800;
         margin-bottom: 10px;
         text-align: left;
-        background: linear-gradient(90deg, #ff9500, #eabb39); 
-        background-size: 200% 200%; 
-        -webkit-background-clip: text; 
-        -webkit-text-fill-color: transparent;
-        animation: gradientText 3s ease infinite; 
-        margin-bottom: 5px;
+        
 
         @media (max-width: 768px) {
           margin-left: 0;
@@ -179,13 +183,12 @@
           height: 53px;
           border-radius: 22px;
           border: transparent;
-          background: linear-gradient(90deg, #ff8800, #eabb39); 
+          background: linear-gradient(90deg, #25de34, #13a513); 
           font-size: 18px;
           font-weight: 600;
           cursor: pointer;
           margin-top: 10px;
-        
-          
+      
         }
       }
     

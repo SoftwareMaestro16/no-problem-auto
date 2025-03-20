@@ -92,11 +92,11 @@
         h2 {
             font-size: 30px;
             font-size: clamp(20px, 3vw, 30px);
-            background: linear-gradient(90deg, #ff9500, #eabb39); 
-            background-size: 200% 200%; 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent;
-            animation: gradientText 3s ease infinite; 
+            // background: linear-gradient(90deg, #ff9500, #eabb39); 
+            // background-size: 200% 200%; 
+            // -webkit-background-clip: text; 
+            // -webkit-text-fill-color: transparent;
+            // animation: gradientText 3s ease infinite; 
         }
     }
 
@@ -143,16 +143,16 @@
             width: 53vw;
             
             .why {
-                background: linear-gradient(90deg, #ff9500, #eabb39); 
-                background-size: 200% 200%; 
-                -webkit-background-clip: text; 
-                -webkit-text-fill-color: transparent;
-                animation: gradientText 3s ease infinite; 
+                // background: linear-gradient(90deg, #ff9500, #eabb39); 
+                // background-size: 200% 200%; 
+                // -webkit-background-clip: text; 
+                // -webkit-text-fill-color: transparent;
+                // animation: gradientText 3s ease infinite; 
                 margin-bottom: 5px;
             }
 
             .desc {
-                color: #e61e1ef5;
+                // color: #e61e1ef5;
             }
 
             @media (max-width: 1240px) {
@@ -224,11 +224,11 @@
             }
 
             .endDesc {
-                background: linear-gradient(90deg, #ff9500, #eabb39); 
-                background-size: 200% 200%; 
-                -webkit-background-clip: text; 
-                -webkit-text-fill-color: transparent;
-                animation: gradientText 3s ease infinite; 
+                // background: linear-gradient(90deg, #ff9500, #eabb39); 
+                // background-size: 200% 200%; 
+                // -webkit-background-clip: text; 
+                // -webkit-text-fill-color: transparent;
+                // animation: gradientText 3s ease infinite; 
             }
         }
         

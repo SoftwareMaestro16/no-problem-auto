@@ -1,7 +1,18 @@
 .redText {
-    color: #e61e1ef5 !important;
+    // color: #e61e1ef5 !important;
+    background: linear-gradient(90deg, #ff9500b7, #ea6b39b4); 
+    background-size: 200% 200%; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 3s ease infinite; 
 }
 
 .dot {
     color: white !important;
+}
+
+@keyframes gradientText {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
