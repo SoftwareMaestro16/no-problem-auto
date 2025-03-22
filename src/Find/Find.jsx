@@ -97,7 +97,7 @@ function Find() {
                         transition={{ duration: 0.8 }}
                     />
                 </div>
-                <h2 className={styles.rew}>{t('rew')}</h2>
+                {/* <h2 className={styles.rew}>{t('rew')}</h2> */}
             </div>
         </>
     );
