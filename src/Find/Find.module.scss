@@ -67,5 +67,17 @@
         }
     }
 
+    .rew {
+        margin: 0;
+        text-align: center;
+        font-size: clamp(20px, 2.5vw, 34px);
+        background: linear-gradient(90deg, #ff9500, #eabb39); 
+        background-size: 200% 200%; 
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        animation: gradientText 3s ease infinite; 
+        margin-top: -5px;
+        margin-bottom: 25px;
+    }
    
 }

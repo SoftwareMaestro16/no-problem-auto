@@ -1,12 +1,34 @@
 import styles from "./Find.module.scss";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Find() {
     const { t } = useTranslation();
     const [isCopied, setIsCopied] = useState(false);
 
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "https://cdn.trustindex.io/loader.js?0866c334324642983a5639bb362";
+        script.async = true;
+        script.defer = true;
+        document.body.appendChild(script);
+    
+        // Проверяем появление виджета и переносим его
+        const interval = setInterval(() => {
+            const widget = document.querySelector(".ti-widget");
+            const targetContainer = document.getElementById("trustindex-widget");
+            if (widget && targetContainer && !targetContainer.contains(widget)) {
+                targetContainer.appendChild(widget);
+                clearInterval(interval); // Останавливаем проверку
+            }
+        }, 500);
+    
+        return () => {
+            document.body.removeChild(script);
+            clearInterval(interval);
+        };
+    }, []);
     const handleCopyClick = () => {
         navigator.clipboard.writeText("3999 Pembroke Rd Hollywood, FL 33021 United States")
             .then(() => {
@@ -29,6 +51,9 @@ function Find() {
                 >
                     {t('find-s')}
                 </motion.h2>
+
+                <div id="trustindex-widget" className={styles.reviewsContainer}></div>
+
 
                 <motion.iframe
                     className={styles.map}
@@ -73,6 +98,7 @@ function Find() {
                         transition={{ duration: 0.8 }}
                     />
                 </div>
+                <h2 className={styles.rew}>{t('rew')}</h2>
             </div>
         </>
     );
