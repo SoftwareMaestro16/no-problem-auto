@@ -18,6 +18,10 @@
     position: relative;
     border-bottom: 1px solid #ffffff2e;
 
+    * {
+        color: white;
+    }
+
     .featuresMainContainer {
         @extend %flex-center;
         flex-direction: column;

@@ -14,13 +14,12 @@ function Find() {
         script.defer = true;
         document.body.appendChild(script);
     
-        // Проверяем появление виджета и переносим его
         const interval = setInterval(() => {
             const widget = document.querySelector(".ti-widget");
             const targetContainer = document.getElementById("trustindex-widget");
             if (widget && targetContainer && !targetContainer.contains(widget)) {
                 targetContainer.appendChild(widget);
-                clearInterval(interval); // Останавливаем проверку
+                clearInterval(interval); 
             }
         }, 500);
     
