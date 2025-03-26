@@ -13,19 +13,14 @@
 .container {
     border-bottom: 1px solid #ffffff2e;
 
-    
-
 
     .mainText {
         @extend %flex-center;
         font-size: clamp(24px, 3vw, 32px);
+        color: white;
     }
 
-    #trustindex-widget {
-        .ti-widget {
-            color: #333 !important;
-        }
-    }
+
 
     .map {
         @extend %flex-center;
