@@ -40,7 +40,7 @@ function App() {
             src="/logo-nobg.png" 
             alt="No Problem Auto" 
             initial={{ opacity: 0.05, scale: 0.9 }}
-            animate={{ opacity: 0.75, scale: 1 }}
+            animate={{ opacity: 0.8, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
           />
 
