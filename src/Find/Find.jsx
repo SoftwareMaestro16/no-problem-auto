@@ -51,8 +51,7 @@ function Find() {
                     {t('find-s')}
                 </motion.h2>
 
-                <div id="trustindex-widget" className={styles.reviewsContainer}></div>
-
+                {/* <div id="trustindex-widget" className={styles.reviewsContainer}></div> */}
 
                 <motion.iframe
                     className={styles.map}
