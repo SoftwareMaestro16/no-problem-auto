@@ -7,27 +7,28 @@ function Find() {
     const { t } = useTranslation();
     const [isCopied, setIsCopied] = useState(false);
 
-    useEffect(() => {
-        const script = document.createElement("script");
-        script.src = "https://cdn.trustindex.io/loader.js?0866c334324642983a5639bb362";
-        script.async = true;
-        script.defer = true;
-        document.body.appendChild(script);
+    // useEffect(() => {
+    //     const script = document.createElement("script");
+    //     script.src = "https://cdn.trustindex.io/loader.js?0866c334324642983a5639bb362";
+    //     script.async = true;
+    //     script.defer = true;
+    //     document.body.appendChild(script);
     
-        const interval = setInterval(() => {
-            const widget = document.querySelector(".ti-widget");
-            const targetContainer = document.getElementById("trustindex-widget");
-            if (widget && targetContainer && !targetContainer.contains(widget)) {
-                targetContainer.appendChild(widget);
-                clearInterval(interval); 
-            }
-        }, 500);
+    //     const interval = setInterval(() => {
+    //         const widget = document.querySelector(".ti-widget");
+    //         const targetContainer = document.getElementById("trustindex-widget");
+    //         if (widget && targetContainer && !targetContainer.contains(widget)) {
+    //             targetContainer.appendChild(widget);
+    //             clearInterval(interval); 
+    //         }
+    //     }, 500);
     
-        return () => {
-            document.body.removeChild(script);
-            clearInterval(interval);
-        };
-    }, []);
+    //     return () => {
+    //         document.body.removeChild(script);
+    //         clearInterval(interval);
+    //     };
+    // }, []);
+
     const handleCopyClick = () => {
         navigator.clipboard.writeText("3999 Pembroke Rd Hollywood, FL 33021 United States")
             .then(() => {
